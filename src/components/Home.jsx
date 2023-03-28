@@ -22,7 +22,7 @@ const Home = () => {
                 <p
                 className='text-gray-500 py-4 max-w-md'
                 >
-                    Eu tenho 1 ano de experiência construindo, decorando e modernizando web sites.
+                    Possuo 1 ano de experiência construindo, decorando e modernizando web sites.
                     Atualmente, minhas tecnologias mais usadas são React, Tailwind, TypeScript.    
                 </p>
 
