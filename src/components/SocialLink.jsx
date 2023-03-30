@@ -14,7 +14,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://www.linkedin.com/in/rafael-augusto-da-silva-a06774206/',
-            style: 'rounded-tr-md'
+            style: 'rounded-tr-md hover:bg-sky-400'
         },
         {
             id: 2,
@@ -24,6 +24,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://github.com/SilvaRafael1/',
+            style: 'hover:bg-gray-400'
         },
         {
             id: 3,
@@ -33,6 +34,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'mailto:rafaelaugustodasilva2@gmail.com',
+            style: 'hover:bg-red-400'
         },
         {
             id: 4,
@@ -42,7 +44,7 @@ const SocialLink = () => {
                 </>
             ),
             href: '/Profile.pdf',
-            style: 'rounded-br-md',
+            style: 'rounded-br-md hover:bg-[#8C9150]',
             download: true,
         }
     ]
