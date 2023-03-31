@@ -38,7 +38,7 @@ const NavBar = () => {
                 smooth
                 duration={500}
                 >
-                    Rafael
+                    Rafael Augusto da Silva
                 </Link>
             </h1>
         </div>
@@ -47,7 +47,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
                 <li
                  key={id}
-                 className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>
+                 className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-white hover:scale-105 duration-200'>
                     <Link to={link} smooth duration={500}>{link}</Link>
                 </li>
             ))}
