@@ -1,49 +1,14 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
-import installNode from '../assets/portfolio/installNode.jpg'
-import navbar from '../assets/portfolio/navbar.jpg'
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct,
-            demo: '',
-            code: ''
-        },
-        {
-            id: 2,
-            src: installNode,
-            demo: '',
-            code: ''
-        },
-        {
-            id: 3,
-            src: navbar,
-            demo: '',
-            code: ''
-        },
-        {
-            id: 4,
-            src: reactParallax,
-            demo: '',
-            code: ''
-        },
-        {
-            id: 5,
-            src: reactSmooth,
-            demo: '',
-            code: ''
-        },
-        {
-            id: 6,
-            src: reactWeather,
-            demo: '',
-            code: ''
+            title: '3D Portfolio',
+            src: '',
+            demo: 'http://rafael-3d-port.bohr.io',
+            code: 'https://github.com/SilvaRafael1/portfolio-3d'
         }
     ]
 
@@ -69,12 +34,13 @@ const Portfolio = () => {
             <div
             className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'
             >
-            {portfolios.map(({ id, src, demo, code }) => 
+            {portfolios.map(({ id, title, src, demo, code }) => 
             
                 <div
                 key={id}
                 className='shadow-md shadow-gray-600 rounded-lg'
                 >
+                    {title}
                     <img 
                     src={src} 
                     alt="" 
