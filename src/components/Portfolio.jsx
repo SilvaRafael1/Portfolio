@@ -1,4 +1,5 @@
 import React from 'react'
+import port3d from "../assets/portfolio/3d-port.png";
 
 const Portfolio = () => {
 
@@ -6,8 +7,8 @@ const Portfolio = () => {
         {
             id: 1,
             title: '3D Portfolio',
-            src: '',
-            demo: 'http://rafael-3d-port.bohr.io',
+            src: port3d,
+            demo: 'https://rafael-3d-port.bohr.io',
             code: 'https://github.com/SilvaRafael1/portfolio-3d'
         }
     ]
@@ -38,9 +39,9 @@ const Portfolio = () => {
             
                 <div
                 key={id}
-                className='shadow-md shadow-gray-600 rounded-lg'
+                className='shadow-md shadow-gray-600 rounded-lg flex flex-col items-center'
                 >
-                    {title}
+                    <span className='text-2xl font-bold py-3'>{title}</span>
                     <img 
                     src={src} 
                     alt="" 
@@ -51,6 +52,7 @@ const Portfolio = () => {
                     >
                         <form 
                         action={demo}
+                        target='_black'
                         >
                             <button
                             className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
@@ -61,6 +63,7 @@ const Portfolio = () => {
 
                         <form 
                         action={code}
+                        target='_black'
                         >
                             <button
                             className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'

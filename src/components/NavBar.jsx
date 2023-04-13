@@ -38,7 +38,7 @@ const NavBar = () => {
                 smooth
                 duration={500}
                 >
-                    Rafael Augusto da Silva
+                    Rafael
                 </Link>
             </h1>
         </div>
