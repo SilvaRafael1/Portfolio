@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/heroImage.jpeg';
+import Image from '../assets/heroImage.jpg';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import { Link } from "react-scroll";
 
@@ -21,10 +21,10 @@ const Home = () => {
                     Eu sou um Desenvolvedor Full-Stack
                 </h2>
                 <p
-                className='text-gray-500 py-4 max-w-md'
+                className='text-gray-300 py-4 max-w-md'
                 >
-                    Possuo 1 ano de experiência construindo, decorando e modernizando web sites.
-                    Atualmente, minhas tecnologias mais usadas são React, Tailwind, TypeScript.    
+                    Possuo 3 ano de experiência construindo, decorando e modernizando web sites.
+                    Atualmente, minhas tecnologias mais usadas são NodeJS, React & TypeScript.    
                 </p>
 
                 <div>

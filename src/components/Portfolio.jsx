@@ -1,15 +1,50 @@
 import React from 'react'
-import port3d from "../assets/portfolio/3d-port.png";
+
+import Bookstore from "../assets/portfolio/Bookstore.png"
+import petsVeterinary from "../assets/portfolio/pets-veterinary.png"
+import phpAudioRecord from "../assets/portfolio/PHP-audio-record-system.png"
+import phpFileStorage from "../assets/portfolio/PHP-file-storage-system.png"
+import urlShortener from "../assets/portfolio/url-shortener.png"
+import portfolio from "../assets/portfolio/portfolio.png"
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            title: '3D Portfolio',
-            src: port3d,
-            demo: 'https://rafael-3d-port.bohr.io',
-            code: 'https://github.com/SilvaRafael1/portfolio-3d'
+            title: 'Bookstore',
+            src: Bookstore,
+            code: 'https://github.com/SilvaRafael1/Bookstore-Own-API'
+        },
+        {
+            id: 2,
+            title: 'Pet Veterinary',
+            src: petsVeterinary,
+            code: 'https://github.com/SilvaRafael1/veterinary-petcare'
+        },
+        {
+            id: 3,
+            title: 'Portfolio',
+            src: portfolio,
+            code: 'https://github.com/SilvaRafael1/portfolio'
+        },
+        {
+            id: 4,
+            title: 'URL Shortener',
+            src: urlShortener,
+            code: 'https://github.com/SilvaRafael1/URL-Shortener'
+        },
+        {
+            id: 5,
+            title: 'PHP Audio Record',
+            src: phpAudioRecord,
+            code: '#'
+        },
+        {
+            id: 6,
+            title: 'PHP File Storage',
+            src: phpFileStorage,
+            code: 'https://github.com/SilvaRafael1/engenharia-clinica'
         }
     ]
 
@@ -35,7 +70,7 @@ const Portfolio = () => {
             <div
             className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'
             >
-            {portfolios.map(({ id, title, src, demo, code }) => 
+            {portfolios.map(({ id, title, src, code }) => 
             
                 <div
                 key={id}
@@ -50,17 +85,6 @@ const Portfolio = () => {
                     <div
                     className='flex items-center justify-center'
                     >
-                        <form 
-                        action={demo}
-                        target='_black'
-                        >
-                            <button
-                            className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
-                            >
-                                Demo
-                            </button>
-                        </form>
-
                         <form 
                         action={code}
                         target='_black'
